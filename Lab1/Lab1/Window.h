@@ -7,6 +7,11 @@
 #include "ObjectBuffer.h"
 #include "Init.h"
 #include "Camera.h"
+#include "Bone.h"
+#include "Skeleton.h"
+#include "cylinder.h"
+#include "maths_funcs.h"
+#define MAX 16
 
 // Macro for indexing vertex buffer
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
@@ -19,6 +24,6 @@ public:
 	~Window(void);
 	void init();
 	int setUpWindow();
-
+	glm::mat4 currentTransform;
 };
 

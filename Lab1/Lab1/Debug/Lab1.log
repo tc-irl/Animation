@@ -1,8 +1,12 @@
-﻿Build started 20/10/2014 14:26:58.
+﻿Build started 22/10/2014 23:50:14.
      1>Project "C:\Users\Administrator\Desktop\TCD\Animation\Lab1\Lab1\Lab1.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\Administrator\Desktop\TCD\Animation\glm /IC:\Users\Administrator\Desktop\TCD\Animation\glfw\include /IC:\Users\Administrator\Desktop\TCD\Animation\glew\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Bone.cpp
-         Bone.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\Administrator\Desktop\TCD\Animation\glm /IC:\Users\Administrator\Desktop\TCD\Animation\glfw\include /IC:\Users\Administrator\Desktop\TCD\Animation\glew\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Skeleton.cpp
+         Skeleton.cpp
+     1>c:\users\administrator\desktop\tcd\animation\lab1\lab1\cylinder.h(30): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\administrator\desktop\tcd\animation\lab1\lab1\cylinder.h(42): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\administrator\desktop\tcd\animation\lab1\lab1\cylinder.h(52): warning C4018: '<' : signed/unsigned mismatch
+         GLM: rotate function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator\Desktop\TCD\Animation\Lab1\Debug\Lab1.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Administrator\Desktop\TCD\Animation\glfw\lib-msvc110" /LIBPATH:C:\Users\Administrator\Desktop\TCD\Animation\glew\lib\Release\Win32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib glew32.lib glfw3.lib opengl32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Administrator\Desktop\TCD\Animation\Lab1\Debug\Lab1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator\Desktop\TCD\Animation\Lab1\Debug\Lab1.lib" /MACHINE:X86 Debug\Bone.obj
          Debug\Camera.obj
@@ -19,4 +23,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.19
+Time Elapsed 00:00:01.63
