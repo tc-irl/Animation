@@ -13,8 +13,8 @@ Bone::Bone(string name, glm::vec3 position, float length, int id)
 	this->position = position;
 	this->length = length;
 	this->id = id;
-	transform = glm::translate(glm::mat4(1.0f),position);
-	globalTransform = glm::mat4(1.0f);
+	//transform = glm::translate(glm::mat4(1.0f),position);
+	//globalTransform = glm::mat4(1.0f);
 }
 
 
@@ -44,10 +44,12 @@ glm::mat4 Bone::calculateGlobalTransform()
 		globalTransform = transform;
 		return globalTransform;
 	}
+	else
+	{
+		globalTransform = transform * parent->globalTransform;
 
-	globalTransform = transform * parent->getGlobalBoneTransform();
-
-	return globalTransform;
+		return globalTransform;
+	}
 }
 
 glm::mat4 Bone::getLocalBoneTransform()

@@ -24,6 +24,5 @@ private:
 	bool swapPositions;
 	float speed;
 	GLuint modelLoc;
-	glm::mat4 transform,gtransform;
 };
 

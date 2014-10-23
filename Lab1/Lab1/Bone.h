@@ -18,6 +18,9 @@ public:
 	glm::vec3 getPosition();
 	void setPosition(glm::vec3 position);
 
+	glm::mat4 transform;
+	glm::mat4 globalTransform;
+
 	int getNumChildren();
 	
 	void setParent(Bone* parent);
@@ -42,8 +45,6 @@ private:
 	string name;
 	Bone *parent;
 	glm::vec3 position;
-	glm::mat4 transform;
-	glm::mat4 globalTransform;
 	float orientation;
 	float length;
 	int numChildren;

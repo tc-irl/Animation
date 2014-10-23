@@ -1,4 +1,4 @@
-﻿Build started 22/10/2014 23:50:14.
+﻿Build started 23/10/2014 01:31:32.
      1>Project "C:\Users\Administrator\Desktop\TCD\Animation\Lab1\Lab1\Lab1.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\Administrator\Desktop\TCD\Animation\glm /IC:\Users\Administrator\Desktop\TCD\Animation\glfw\include /IC:\Users\Administrator\Desktop\TCD\Animation\glew\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Skeleton.cpp
@@ -23,4 +23,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.63
+Time Elapsed 00:00:01.73
