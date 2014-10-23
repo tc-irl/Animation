@@ -7,6 +7,7 @@ void Skeleton::setUpBones()
 {
 	colorTop = glm::vec4(1,1,1,1.0f);
 	colorBottom = glm::vec4(0,0,0,1.0f);
+
 	// Initializing bones
 	bones[0] = new Bone("Wrist",glm::vec3(0,0,0),1,0);
 	cylinder[0] = new Cylinder(glm::vec4(bones[0]->getPosition(),0),1, 0.5f, 0.5f, colorTop, colorBottom,2);
@@ -59,6 +60,7 @@ void Skeleton::setUpBones()
 	bones[15] = new Bone("Pinky_Upper",glm::vec3(0.40f,1.5f,0),0.25f,15);
 	bones[15]->setParent(bones[10]);
 
+	// Creating cylinders
 	for(int i = 1; i < MAX; i++)
 	{
 		cylinder[i] = new Cylinder(glm::vec4(bones[i]->getPosition(),0),bones[i]->getLength(), 0.05f, 0.05f, colorTop, colorBottom,16);
@@ -94,6 +96,7 @@ Skeleton::Skeleton(int numBones)
 	speed = 0.01f;
 }
 
+//function to traverse through the bones, calculating transforms, updating and drawing cylinders.
 void Skeleton::traverseHierarchy(Bone *bone)
 {
 
@@ -104,38 +107,22 @@ void Skeleton::traverseHierarchy(Bone *bone)
 		cylinder[bone->id]->draw();
 	}
 	
-	else if(bone->getBoneName() == "Thumb_Lower" || bone->getBoneName() == "Index_Lower" 
-		|| bone->getBoneName() == "Middle_Lower" || bone->getBoneName() == "Ring_Lower" 
-		|| bone->getBoneName() == "Pinky_Lower")
+	else if((bone->id != 0 && bone->id < 6))
 	{
 		bone->transform = glm::translate(glm::mat4(1.0f),(bone->getPosition()))
 			* glm::rotate(glm::mat4(1.0f),speed,glm::vec3(1,0,0)) 
-			* glm::translate(glm::mat4(1.0f),(bone->getParent()->getPosition() - bone->getPosition()));
-
+			* glm::translate(glm::mat4(1.0f),(-bone->getPosition()));
+			
 		cylinder[bone->id]->update(modelLoc,bone->calculateGlobalTransform());
 		cylinder[bone->id]->draw();
 	}
-	else if(bone->getBoneName() == "Thumb_Middle" || bone->getBoneName() == "Index_Middle" 
-		|| bone->getBoneName() == "Middle_Middle" || bone->getBoneName() == "Ring_Middle" 
-		|| bone->getBoneName() == "Pinky_Middle")
+	else 
 	{
 		bone->transform = 
 			glm::translate(glm::mat4(1.0f),bone->getPosition()) *
 			glm::rotate(glm::mat4(1.0f),speed,glm::vec3(1,0,0)) 
 			* glm::translate(glm::mat4(1.0f),(-bone->getParent()->getPosition() ));
-
-		cylinder[bone->id]->update(modelLoc,bone->calculateGlobalTransform());
-		cylinder[bone->id]->draw();
-	}
-	
-	else
-	{
-		
-		bone->transform = 
-			 glm::translate(glm::mat4(1.0f),bone->getPosition()) *
-			  glm::rotate(glm::mat4(1.0f),speed,glm::vec3(1,0,0)) 
-			* glm::translate(glm::mat4(1.0f),(-bone->getParent()->getPosition() ));
-		
+			
 		cylinder[bone->id]->update(modelLoc,bone->calculateGlobalTransform());
 		cylinder[bone->id]->draw();
 	}

@@ -37,6 +37,8 @@ int Bone::getNumChildren()
 	return numChildren;
 }
 
+//function to calculate global transform of child -> child local transform * parent's global transform
+// the wrist is handled differently as it does not have a parent transform.
 glm::mat4 Bone::calculateGlobalTransform()
 {
 	if(getBoneName() == "Wrist")
@@ -46,7 +48,7 @@ glm::mat4 Bone::calculateGlobalTransform()
 	}
 	else
 	{
-		globalTransform = transform * parent->globalTransform;
+		globalTransform = parent->globalTransform * transform;
 
 		return globalTransform;
 	}
@@ -62,6 +64,7 @@ glm::mat4 Bone::getGlobalBoneTransform()
 	return globalTransform;
 }
 
+// add a child 
 void Bone::addChild(Bone* child)
 {
 	children[numChildren] = child;
