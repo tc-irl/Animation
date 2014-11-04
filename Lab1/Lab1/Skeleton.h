@@ -18,7 +18,7 @@ public:
 	int numBones; 
 	glm::vec4 colorTop, colorBottom;
 	void animateHand(GLuint modelLoc);
-
+	void drawHand();
 private:
 	int count;
 	bool swapPositions;

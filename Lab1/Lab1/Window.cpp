@@ -31,7 +31,6 @@ void Window::init()
 	skeleton = new Skeleton(MAX);
 	skeleton->setUpBones();
 
-
 	//buffer = new ObjectBuffer(36);
 	//buffer->GenerateVBO(vertices,colors);
 	//buffer->LinkBufferToShader(tShader->GetProgramID());

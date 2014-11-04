@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{bc23eafa-1e61-43c0-ac15-4e5dcaed67f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Physics">
+      <UniqueIdentifier>{4d1cc925-2b48-480c-b47f-507e17117598}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Rendering">
+      <UniqueIdentifier>{14629816-e49b-42e8-9afb-59ca11cf000e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Core">
+      <UniqueIdentifier>{2fe61b77-388c-40f1-b151-4917baaef919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{e31f74a2-697c-471b-9dfb-e1d2b19f50bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{2aa5a4cd-dd36-4475-84f1-e585522cb860}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Rendering">
+      <UniqueIdentifier>{391c8218-4d6a-41c6-8bf6-dbdc24bb9ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Physics">
+      <UniqueIdentifier>{9aaa380c-b4b2-44c6-800f-891089848a8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Core">
+      <UniqueIdentifier>{b7d2fff8-6cf2-4d47-8f7d-fbda0bf51fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{0d63ec0d-2c74-4cb3-b1da-924a89d5a88a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CoreEngine.cpp">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Source Files\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Source Files\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderingEngine.cpp">
+      <Filter>Source Files\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ReferenceCounter.cpp">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderUtil.cpp">
+      <Filter>Source Files\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="MappedValues.cpp">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Source Files\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex.cpp">
+      <Filter>Source Files\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Lighting.cpp">
+      <Filter>Source Files\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshRenderer.cpp">
+      <Filter>Source Files\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CoreEngine.h">
+      <Filter>Header Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Header Files\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Header Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderingEngine.h">
+      <Filter>Header Files\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameComponent.h">
+      <Filter>Header Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ReferenceCounter.h">
+      <Filter>Header Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderUtil.h">
+      <Filter>Header Files\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="MappedValues.h">
+      <Filter>Header Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Header Files\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Header Files\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Lighting.h">
+      <Filter>Header Files\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshRenderer.h">
+      <Filter>Header Files\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files\Engine\Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -11,7 +11,7 @@ class Bone
 {
 public:
 	Bone(void);
-	Bone(string name, glm::vec3 position,float length,int id);
+	Bone(string name, glm::vec3 position,int id);
 	~Bone(void);
 
 	string getBoneName();
@@ -20,6 +20,7 @@ public:
 
 	glm::mat4 transform;
 	glm::mat4 globalTransform;
+	glm::mat4 offset;
 
 	int getNumChildren();
 	

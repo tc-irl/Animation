@@ -6,15 +6,15 @@ Bone::Bone(void)
 
 }
 
-Bone::Bone(string name, glm::vec3 position, float length, int id)
+Bone::Bone(string name, glm::vec3 position, int id)
 {
 	numChildren = 0;
 	this->name = name;
 	this->position = position;
-	this->length = length;
+	offset = glm::translate(glm::mat4(1.0f),position);
 	this->id = id;
-	//transform = glm::translate(glm::mat4(1.0f),position);
-	//globalTransform = glm::mat4(1.0f);
+	transform = glm::translate(glm::mat4(1.0f),position);
+	globalTransform = glm::mat4(1.0f);
 }
 
 
@@ -89,10 +89,5 @@ void Bone::setBoneTransform(glm::mat4 transform)
 void Bone::setGlobalBoneTransform(glm::mat4 globalTransform)
 {
 	this->globalTransform = globalTransform;
-}
-
-float Bone::getLength()
-{
-	return length;
 }
 

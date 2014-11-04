@@ -1,0 +1,82 @@
+﻿Build started 03/11/2014 20:36:06.
+     1>Project "C:\Users\Administrator\Desktop\TCD\Animation\Assignment2\Assignment2\Assignment2.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\Administrator\Desktop\TCD\Animation\glm /IC:\Users\Administrator\Desktop\TCD\Animation\glfw\include /IC:\Users\Administrator\Desktop\TCD\Animation\glew\include /IC:\Users\Administrator\Desktop\TCD\Animation\assimp\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Camera.cpp CoreEngine.cpp Game.cpp MappedValues.cpp RenderingEngine.cpp Shader.cpp Texture.cpp Transform.cpp Window.cpp main.cpp
+         main.cpp
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\transform.h(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\transform.h(17): error C2143: syntax error : missing ',' before '&'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(18): error C2061: syntax error : identifier 'CoreEngine'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(22): error C2039: 'GetTransform' : is not a member of 'GameObject'
+                 c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gameobject.h(3) : see declaration of 'GameObject'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(23): error C2039: 'GetTransform' : is not a member of 'GameObject'
+                 c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gameobject.h(3) : see declaration of 'GameObject'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\camera.h(13): error C2061: syntax error : identifier 'CoreEngine'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\shader.h(13): fatal error C1083: Cannot open include file: 'DirectionalLight.h': No such file or directory
+         Window.cpp
+     1>c:\users\administrator\desktop\tcd\animation\glew\include\gl\glew.h(85): fatal error C1189: #error :  gl.h included before glew.h
+         Transform.cpp
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\transform.h(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\transform.h(17): error C2143: syntax error : missing ',' before '&'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\shader.h(13): fatal error C1083: Cannot open include file: 'DirectionalLight.h': No such file or directory
+         Texture.cpp
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\texture.cpp(5): error C2511: 'Texture::Texture(void)' : overloaded member function not found in 'Texture'
+                 c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\texture.h(28) : see declaration of 'Texture'
+         Shader.cpp
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\renderingengine.h(24): error C2061: syntax error : identifier 'Camera'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\renderingengine.h(30): error C2143: syntax error : missing ';' before '&'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\renderingengine.h(30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\renderingengine.h(30): warning C4183: 'GetMainCamera': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\renderingengine.h(32): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\renderingengine.h(32): error C2143: syntax error : missing ',' before '&'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\renderingengine.h(39): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\renderingengine.h(39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\renderingengine.h(41): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\renderingengine.h(41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\game.h(19): error C2061: syntax error : identifier 'CoreEngine'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(21): error C2143: syntax error : missing ';' before '&'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(21): error C2433: 'GameComponent::Transform' : 'inline' not permitted on data declarations
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(22): warning C4183: 'GetTransform': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(23): error C2143: syntax error : missing ';' before '&'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(23): error C2433: 'GameComponent::Transform' : 'inline' not permitted on data declarations
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(23): warning C4183: 'GetTransform': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(22): error C2039: 'GetTransform' : is not a member of 'GameObject'
+                 c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gameobject.h(3) : see declaration of 'GameObject'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(23): error C2039: 'GetTransform' : is not a member of 'GameObject'
+                 c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gameobject.h(3) : see declaration of 'GameObject'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\shader.h(13): fatal error C1083: Cannot open include file: 'DirectionalLight.h': No such file or directory
+         RenderingEngine.cpp
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\transform.h(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\transform.h(17): error C2143: syntax error : missing ',' before '&'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\game.h(15): error C2061: syntax error : identifier 'RenderingEngine'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\game.h(19): error C2061: syntax error : identifier 'CoreEngine'
+     1>c:\users\administrator\desktop\tcd\animation\glew\include\gl\glew.h(85): fatal error C1189: #error :  gl.h included before glew.h
+         MappedValues.cpp
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\mappedvalues.cpp(5): error C2600: 'MappedValues::MappedValues' : cannot define a compiler-generated special member function (must be declared in the class first)
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\mappedvalues.cpp(10): error C2600: 'MappedValues::~MappedValues' : cannot define a compiler-generated special member function (must be declared in the class first)
+         Game.cpp
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\transform.h(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\transform.h(17): error C2143: syntax error : missing ',' before '&'
+     1>c:\users\administrator\desktop\tcd\animation\glew\include\gl\glew.h(85): fatal error C1189: #error :  gl.h included before glew.h
+         CoreEngine.cpp
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\transform.h(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\transform.h(17): error C2143: syntax error : missing ',' before '&'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(18): error C2061: syntax error : identifier 'CoreEngine'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(22): error C2039: 'GetTransform' : is not a member of 'GameObject'
+                 c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gameobject.h(3) : see declaration of 'GameObject'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gamecomponent.h(23): error C2039: 'GetTransform' : is not a member of 'GameObject'
+                 c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\gameobject.h(3) : see declaration of 'GameObject'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\camera.h(13): error C2061: syntax error : identifier 'CoreEngine'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\shader.h(13): fatal error C1083: Cannot open include file: 'DirectionalLight.h': No such file or directory
+         Camera.cpp
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\transform.h(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\transform.h(17): error C2143: syntax error : missing ',' before '&'
+     1>c:\users\administrator\desktop\tcd\animation\assignment2\assignment2\shader.h(13): fatal error C1083: Cannot open include file: 'DirectionalLight.h': No such file or directory
+         Generating Code...
+     1>Done Building Project "C:\Users\Administrator\Desktop\TCD\Animation\Assignment2\Assignment2\Assignment2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:07.14
